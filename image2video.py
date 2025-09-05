@@ -23,13 +23,13 @@ def image2video(image_dir, video_path):
     for image_name in image_names:
         im = cv2.imread(os.path.join(image_dir, image_name))
         video_writer.write(im)
-        print(image_name, 'Merging Done!')
+        print('Writing ', image_name, ' Done!')
     
     # Releasing video
     video_writer.release()
-    print('Converting into the video is completed!')
+    print('Converting completed!')
 
-image_dir = 'E:/Research/Work/202405_solar_storm/HMI_field/BzBh/'
-video_path = 'E:/Research/Work/202405_solar_storm/HMI_field/BzBh.mp4'
+image_dir = 'E:/Research/Work/202405_solar_storm/Doppler/'
+video_path = 'E:/Research/Work/202405_solar_storm/Doppler.mp4'
 
 image2video(image_dir, video_path)
