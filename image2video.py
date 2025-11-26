@@ -29,7 +29,7 @@ def image2video(image_dir, video_path):
     video_writer.release()
     print('Converting completed!')
 
-image_dir = 'E:/Research/Work/202405_solar_storm/Doppler/'
-video_path = 'E:/Research/Work/202405_solar_storm/Doppler.mp4'
+image_dir = 'E:/Research/Work/202405_solar_storm/winding/ARTop/run_3/distribution/wind/'
+video_path = 'E:/Research/Work/202405_solar_storm/winding/ARTop/run_3/distribution/wind.mp4'
 
 image2video(image_dir, video_path)
